@@ -1,5 +1,8 @@
-execute pathogen#infect()
-call pathogen#helptags()
+""""""
+" not yet installed
+""""""
+"execute pathogen#infect()
+"call pathogen#helptags()
 
 syntax on
 "Allows backspacing text that wasn't added in the current insert
@@ -37,20 +40,23 @@ au FileType cs setlocal smartindent
 au FileType cs setlocal fileformat=dos
 
 
+""""""
+" not yet installed
+""""""
 " NERD_tree config
-let NERDTreeChDirMode=2
-let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
-let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
-let NERDTreeShowBookmarks=1
-map <silent> <C-n> :NERDTreeToggle<CR>
+"let NERDTreeChDirMode=2
+"let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$', '\.swp$']
+"let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
+"let NERDTreeShowBookmarks=1
+"map <silent> <C-n> :NERDTreeToggle<CR>
 
 " TagList Plugin Configuration
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Close_On_Select = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_File_Fold_Auto_Close = 1
-map <F7> :TlistToggle<CR>
+"let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+"let Tlist_GainFocus_On_ToggleOpen = 1
+"let Tlist_Close_On_Select = 1
+"let Tlist_Use_Right_Window = 1
+"let Tlist_File_Fold_Auto_Close = 1
+"map <F7> :TlistToggle<CR>
 
 " Viewport Controls
 " " ie moving between split panes
