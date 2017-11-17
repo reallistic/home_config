@@ -17,4 +17,13 @@ HISTFILESIZE=10000000
 export KUBERNETES_PROVIDER=vagrant
 export REACT_EDITOR=/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text
 
+# Imports local changes from .bashrc
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+# Adds pyenv stuff
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

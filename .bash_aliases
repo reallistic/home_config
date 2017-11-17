@@ -1,4 +1,3 @@
-alias ls='ls -lsah'
 # Shortcut for deleting pyc files recursively in the current directory
 alias rmpyc='find . -name "*.pyc" -delete'
 
