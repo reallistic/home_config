@@ -18,8 +18,8 @@ let python_highlight_all = 1
 command FormatJSON :%!python -m json.tool
 
 
-set statusline=%f%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
-            \ [%l\|%c\|%p%%]
+" set statusline=%f%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
+"            \ [%l\|%c\|%p%%]
 
 " Python stuff
 au FileType py setlocal autoindent
@@ -38,6 +38,11 @@ au FileType cs setlocal listchars=tab:\ \
 au FileType cs setlocal autoindent
 au FileType cs setlocal smartindent
 au FileType cs setlocal fileformat=dos
+
+
+" Powerline
+set rtp+=~/.pyenv/versions/2.7.14/lib/python2.7/site-packages/powerline/bindings/vim/
+set t_Co=256
 
 
 """"""
@@ -72,7 +77,7 @@ map <silent>,l <C-w>l
 " syntastic
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0

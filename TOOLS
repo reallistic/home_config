@@ -1,10 +1,19 @@
 Tools a new person should install
 ============
 
-- [brew](https://brew.sh)
+## Terminal stuff
+- brew - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- zshell - `brew install zsh`
+- powerline-status - `pip install --user powerline-status`
+- powerline-fonts - `git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh`
+- z - `brew install z`
+
+## Tools
 - pyenv - `brew install pyenv`
 - tmux - `brew install tmux`
 - vim - `brew install vim` (built in is usually outdated)
 - Python 2.7 - `pyenv install 2.7` (built in runs from privileged folder)
 - Python 3.6 - `pyenv install 3.6`
 - [iTerm](http://www.iterm2.com)
+- nvm - `brew install nvm`
+
